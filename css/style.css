@@ -6,17 +6,18 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .container {
-    width: 1114px;
+    max-width: 1114px;
     margin: 0 auto;     
 }
 
 /* ======= header ======= */
 
 
-.header {
+.header {    
     background-image: url(../img/header-bg.jpg);
     background-repeat: no-repeat;
     background-position: top center;
@@ -123,4 +124,100 @@ body {
 
 .header-lang__choice.active {
     display: flex;
+}
+
+.header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 184px;
+    padding-bottom: 53px;
+}
+
+.header-inner__text {
+    min-width: 50%;
+    text-align: left;
+}
+
+.header-inner__text-title {
+    max-width: 100%;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 102px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.header-inner__text-subtitle {
+    max-width: 370px;
+    text-align: left;
+    font-size: 24px;
+    line-height: 34px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.header-inner__text-link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff; 
+    padding-right: 10px;
+    position: relative;   
+}
+
+.header-inner__text-link-img {
+    padding-left: 5px;
+}
+
+.header-inner__text-link:hover {   
+    text-decoration: underline;    
+}
+
+.header-inner__cards {
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;    
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 120px;    
+}
+
+.header-inner__card {
+    max-width: 255px;
+    padding: 30px 34px;
+    text-align: left;
+}
+
+.header-inner__card-title {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.header-inner__card-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+}
+
+.header-inner__card-link:hover {
+    text-decoration: underline;
+}
+
+.header-inner__card:nth-child(1) {
+    background-color: #2378FC;
+}
+
+.header-inner__card:nth-child(2){
+    background-color: #30BCC9;
+}
+.header-inner__card:nth-child(3){
+    background-color: #FFC41E;
+}
+.header-inner__card:nth-child(4){
+    background-color: #F6404F;
 }
