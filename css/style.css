@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1114px;
+    margin: 0 auto;     
+}
+
+/* ======= header ======= */
+
+
+.header {
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.header-header {    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 33px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.header-nav {
+    max-width: 1114px;   
+}
+
+.header-nav__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 44px;
+}
+
+.header-nav__list-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.header-nav__list-link:hover {
+    color: #ffc41e;
+}
+
+.header-search-lang {
+    display: flex;
+    align-items: center;
+}
+
+.header-search {
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header-search__icon {
+    cursor: pointer;
+}
+
+.header-search__search {
+    width: 0%;
+    line-height: 22px;
+    border-radius: 3px;
+    border: none;
+    outline: none; 
+    background-color: transparent;   
+    transition: 0.2s all;
+}
+
+.header-search__search.active {
+    width: 70%;
+    padding-left: 2px;
+    background-color: #fff;
+}
+
+.header-lang {
+    width: 72px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-lang__current {
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.header-lang__choice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 30px;
+    top: 22px;     
+    color: #fff;
+    font-size: 15px;
+    display: none;       
+}
+
+.header-lang__choice span:hover {
+    color: #ffc41e;
+}
+
+.header-lang__choice.active {
+    display: flex;
+}
