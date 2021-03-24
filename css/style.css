@@ -177,7 +177,8 @@ body {
 .header-inner__cards {
     max-width: 50%;
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap; 
+    justify-content: center;   
     column-gap: 30px;
     row-gap: 30px;
     margin-top: 120px;    
@@ -238,7 +239,8 @@ body {
 
 .main-menu__items {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap; 
+    justify-content: center;   
     column-gap: 30px;
     row-gap: 30px;
 }
