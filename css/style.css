@@ -327,7 +327,7 @@ body {
 
 .event-card__item {
     max-width: 350px;
-    transition: 0.2s all;
+    transition: 0.5s all;
 }
 
 .event-card__item:hover {
@@ -389,6 +389,11 @@ body {
 
 .announcement__item {
     max-width: 445px;
+    transition: 0.5s all;
+}
+
+.announcement__item:hover {
+    transform: scale(1.02);
 }
 
 .announcement__item-link {
@@ -467,4 +472,9 @@ body {
     font-weight: 500;
     line-height: 27px;
     color: #2E373B;
+}
+
+.news-block__link:hover 
+.news-block__link-title {
+    text-decoration: underline;
 }
